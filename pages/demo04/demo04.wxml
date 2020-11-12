@@ -1,0 +1,25 @@
+<!--pages/demo04/demo04.wxml-->
+<!-- 
+ 1 input 标签绑定 input标签
+  绑定关键字 bindinput
+  2 通过事件源获取
+  e.detail.value
+  3 把输入框绑定到num
+    1 错误
+      this.data.num = e.detail.value
+      this.num = e.detail.value
+    2 正确
+      this.setDate({
+        num: e.detail.value
+      })
+  4 给button加点击时间
+     1 bindtap
+     2 无法在小程序的事件中直接传参
+     3 通过自定义属性传值
+ -->
+<input type="text" bindinput="handleInput" />
+<button bindtap="handleTap" data-operation="1">+</button>
+<button bindtap="handleTap"  data-operation="-1">-</button>
+<view>
+  {{num}}
+</view>

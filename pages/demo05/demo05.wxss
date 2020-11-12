@@ -1,0 +1,27 @@
+/* pages/demo05/demo05.wxss */
+/* 
+  1 小程序中不需要引入样式，只需要保持文件名相同即可
+  2 需要把页面中的某些样式元素由 px改成 rpx
+    设计稿
+    750 px = 750 rpx
+    1px = 1 rpx
+    375
+    375px = 750 rpx
+    1 px = 2 rpx
+
+    4 公式
+    1px = 750rpx/page
+    calc()属性，css wxss都支持
+    要求
+      1 750 和rpx中间不要留空格
+      2 运算符之间不要留空格
+*/
+
+view{
+  /* width: 200rpx; */
+  height: 200rpx;
+  font-size: 40rpx;
+  background-color: aqua;
+
+  width: calc(750rpx * 100 / 375);
+}

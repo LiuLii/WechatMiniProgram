@@ -1,0 +1,10 @@
+<!-- 
+  1.长按文本复制
+  2.对文本内容进行解码
+ -->
+
+<text selectable="{{true}}"  decode="{{true}}" >
+text&nbsp;123
+
+
+</text>

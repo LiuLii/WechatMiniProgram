@@ -1,0 +1,9 @@
+<!--pages/demo03/demo03.wxml-->
+<!-- 
+  1.text 标签相当于html中的 span
+  2.view 相当于div标签，不会换行
+ -->
+<text>1</text>
+<text>2</text>
+<view>1</view>
+<view>2</view>

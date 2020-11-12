@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/demo09/demo09",
+    "pages/demo08/demo08",
+    "pages/demo07/demo07",
+    "pages/demo06/demo06",
+    "pages/demo05/demo05",
+    "pages/demo04/demo04",
+    "pages/index/index",
+    "pages/img/img",
+    "pages/mine/mine",
+    "pages/search/search",
+    "pages/demo03/demo03",
+    "pages/demo01/demo01",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "navigationBarTitleText": "我的小程序",
+    "enablePullDownRefresh": true,
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#0068cc",
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#00ffcc"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/img/img",
+        "text": "图片"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "个人中心"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索"
+      }
+    ],
+    "color": "#Fff000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#ff00ff",
+    "position": "bottom"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "navigateToMiniProgramAppIdList": [
+    "wxe5f52902cf4de896"
+  ],
+  "sitemapLocation": "sitemap78.json"
+}

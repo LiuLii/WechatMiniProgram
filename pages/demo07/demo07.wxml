@@ -1,0 +1,5 @@
+<!--pages/demo07/demo07.wxml-->
+<view>
+<text>text按钮</text>
+  <van-button type="danger">危险按钮</van-button>
+</view>

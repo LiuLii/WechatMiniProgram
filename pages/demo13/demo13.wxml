@@ -1,0 +1,51 @@
+<!-- 
+  button 标签
+  1 外观属性
+   1 size 控制按钮大小
+    default
+    mini
+   2 type 用来控制按钮的颜色
+    default
+    primary
+    warn
+  3 plain
+  4 loading 正在加载
+ -->
+
+ <button >button 标签</button>
+ <button size="mini" >mini button 标签</button>
+ <button type="default" >default button 标签</button>
+ <button type="primary" >primary button 标签</button>
+ <button type="warn" >warn button 标签</button>
+ <button type="warn" plain="{{true}}" >plain button 标签</button>
+  <button type="primary" loading="{{true}}">primary button 标签</button>
+
+  <!-- 
+
+    button 按钮的开放能力
+    open-type
+    1 contact 直接打开客服功能
+    2 share 转发当前小程序到微信好友中  不能把小程序 分享到朋友圈
+    3 getPhoneNumber  结合一个事件使用，如果不是企业的小程序账号，是没有权限获取用户的手机号
+      1 绑定一个事件
+      2 在事件函数中获取
+      3 获取到的信息已经加密过了，没办法直接获取
+        需要用户自己搭建小程序的后台服务器，在后台服务器中进行解析 手机号码，返回到小程序中，就可以看到信息了
+    4 getUserInfo
+      1 类似 获取用户手机号码
+      2 可以直接获取
+    5 launchApp 在小程序当中打开app
+      1 需要现在app中通过app的链接打开小程序
+      2 在小程序中 再通过这个按钮功能 重新打开 app
+    6 openSetting 打开内置的授权页面
+      1 打开小程序内置授权页面  用户曾经点过的页面
+    7 feedback 打开小程序内置反馈意见
+      1 只能通过真机调试演示
+   -->
+<button open-type="contact" >contact</button>
+<button open-type="share" >share</button>
+<button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" >getPhoneNumber</button>
+<button open-type="getUserInfo" bindgetuserinfo="getUserInfo">getUserInfo</button>
+<button open-type="launchApp" >launchApp</button>
+<button open-type="openSetting" >openSetting</button>
+<button open-type="feedback" >feedback</button>

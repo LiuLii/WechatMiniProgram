@@ -1,0 +1,20 @@
+<!-- 
+  导航组件 navigator
+  0 块级元素 可以直接换行  可以直接加入宽度 高度
+  1 url 要跳转的页面路径 绝对路径 相对路径
+  2 target  要跳转到当前的小程序 还是其他的小程序
+    self 默认值 自己
+    miniProgram 其他小程序
+  3 open-type 跳转的方式
+    1 navigate 默认值，保留当前页面，跳转到应用内的某个页面，但是不能跳转到tabbar页面
+    2 redirect 不保留当前页面，跳转到应用内的某个页面，但是不能跳转到tabbar页面
+    3 switchTab 跳转到tabbar 并关闭非tabbar页面
+    4 reLaunch 随便跳转
+ -->
+
+ <navigator open-type="navigate" url="/pages/demo10/demo10">轮播图页面</navigator>
+ <navigator url="/pages/index/index">轮播图页面 tabbar</navigator>
+ <navigator open-type="redirect" url="/pages/demo10/demo10">轮播图页面 redirect </navigator>
+  <navigator open-type="switchTab" url="/pages/index/index"> switchTab 轮播图页面 tabbar</navigator>
+  <navigator open-type="reLaunch" url="/pages/index/index">reLaunch 轮播图页面 tabbar</navigator> 
+  

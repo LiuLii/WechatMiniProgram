@@ -1,0 +1,19 @@
+.tabs{}
+.tabs_title{
+  /* 变成一个盒子 */
+  display: flex;
+  padding: 10rpx 0;
+}
+.title_item{
+  flex: 1;
+  display: flex;
+  /* 居中显示，中间留空格 */
+  justify-content: center;
+  align-items: center;
+}
+.active{
+  color: red;
+  /* currentColor:表示当前字体的颜色 */
+  border-bottom: 5rpx solid currentColor;
+}
+.tabs_content{}

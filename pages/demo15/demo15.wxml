@@ -1,0 +1,13 @@
+<!-- 
+  1 radio 
+    必须搭配父元素 radio-group使用
+    2
+    3 需要给 radio-group 绑定change事件
+ -->
+
+<radio-group bindchange="getGender" >
+  <radio color="red" value="male" >男</radio>
+  <radio color="red" value="female">女</radio>
+</radio-group>
+
+<view >您选中的是：{{gender}}</view>
